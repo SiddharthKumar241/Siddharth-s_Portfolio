@@ -2,9 +2,7 @@
   cursor: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgdmVyc2lvbj0iMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8Y2lyY2xlIGN4PSIxMiIgY3k9IjEyIiByPSIxMSIgc3Ryb2tlPSIjYjlmZjM0IiBzdHJva2Utd2lkdGg9IjIiIGZpbGw9Im5vbmUiLz4KICA8cG9seWdvbiBwb2ludHM9IjIgMiAxOCAxMiAyIDIyIiBmaWxsPSIjYjlmZjM0Ii8+Cjwvc3ZnPg=='), auto;
 } */
 
-html, body, *,#repo ,.image-container,#services{
-  cursor: url('./pictures/icons8-cursor-48.png') 16 16, default;
-}
+
 :root {
   --primary: #b9ff34;
   --background: #0c0c0c;
@@ -766,4 +764,8 @@ footer {
     text-align: center;
     margin-bottom: 0.3rem;
   }
+}
+
+html, body, *,#repo ,.image-container,#services{
+  cursor: url('./pictures/icons8-cursor-48.png') 16 16, default;
 }
