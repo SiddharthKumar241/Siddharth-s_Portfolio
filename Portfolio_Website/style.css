@@ -766,6 +766,6 @@ footer {
   }
 }
 
-html, body, *,#repo ,.image-container,#services{
+html, body, *,#repo ,.image-container,#services,.skill-badge{
   cursor: url('./pictures/icons8-cursor-48.png') 16 16, default;
 }
