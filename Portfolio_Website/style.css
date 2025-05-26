@@ -181,6 +181,46 @@ nav a:hover {
   color: #a3e635;
   transform: scale(1.1);
 }
+/* Wrapper circle for LeetCode to give background */
+.leetcode-circle {
+  background-color: var(--primary);
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.leetcode-circle {
+  position: relative;
+  left: 15px;
+  display: inline-flex;
+  align-items: center;
+  transition: left 0.3s ease;
+}
+
+.leetcode-circle:hover {
+  transform: scale(1.03);
+  /* box-shadow: 0 0 8px var(--primary); */
+ 
+}
+
+
+.leetcode-icon {
+  width: 20px;
+  height: 20px;
+  filter: none;
+  background-color: #a3e635;
+  border-radius: 4px;
+  padding: 2px;
+  box-sizing: content-box;
+  transition: transform 0.3s ease;
+  vertical-align: middle;
+  display: inline-block;
+}
+
 
 .tagline {
   margin-top: 1rem;
