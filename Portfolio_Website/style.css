@@ -715,7 +715,7 @@ footer {
   .image-container span {
     width: 100px;
     height: 120px;
-    transform: translate(-50%, -50%) rotateY(calc(var(--i) * 25deg)) translateZ(180px);
+    transform: translate(-50%, -50%) rotateY(calc(var(--i) * 29.5deg)) translateZ(180px);
   }
 
   .image-container span img {
