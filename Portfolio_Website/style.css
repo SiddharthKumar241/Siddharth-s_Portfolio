@@ -727,7 +727,6 @@ footer {
     font-size: 0.75rem;
   }
 }
-
 .timeline-date {
   position: absolute;
   top: 1rem;
@@ -745,7 +744,6 @@ footer {
   left: -140px;
   text-align: right;
 }
-
 .btn-view {
   display: inline-block;
   margin-top: 0.5rem;
@@ -758,12 +756,10 @@ footer {
   text-decoration: none;
   transition: background 0.3s ease;
 }
-
 .btn-view:hover {
   background: #a6ff00;
   box-shadow: 0 0 10px rgba(185, 255, 52, 0.5);
 }
-
 #certification-progress {
   position: absolute;
   top: 0;
@@ -777,7 +773,6 @@ footer {
   z-index: 2;
   transition: top 0.4s ease-in-out;
 }
-
 .skill-badge {
   display: inline-block;
   background-color: #a4d129;
@@ -793,7 +788,6 @@ footer {
   transition: background-color 0.3s ease;
 }
 
-
 .skill-badge:hover {
   background-color: #59750c;
   /* slightly darker green on hover */
@@ -807,7 +801,6 @@ footer {
     margin-bottom: 0.3rem;
   }
 }
-
 @media (max-width: 580px) {
 
   section,
@@ -825,16 +818,13 @@ footer {
     display: block;
     margin: 0 auto;
   }
-
-  header,
-  .nav,
   .hero,
   .about-columns,
   .connect-container {
     align-items: center !important;
     justify-content: space-evenly !important;
-    gap: 1rem;
-    padding: 1rem;
+    gap: 1rem !important;
+    padding: 1rem !important;
     text-align: center;
   }
 
@@ -848,13 +838,34 @@ footer {
     display: block;
   }
 
-  header,
-  .hero-text {
-    display: flex;
+  .hero {
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem 1rem;
+  }
+
+  .hero-text {
     text-align: center;
+    width: 100%;
+  }
+
+  .hero-text h2,
+  .hero-text span,
+  .hero .explore {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .hero .explore {
+    display: inline-block;
+    margin-top: 1.5rem;
+  }
+
+  .hero img {
+    max-width: 80%;
+    margin-top: 1rem;
   }
 
   nav a {
@@ -890,6 +901,23 @@ footer {
   .timeline-item {
     margin-left: auto !important;
     margin-right: 0 !important;
+  }
+  header,
+  .nav {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 0.5rem !important;
+    padding: 0.5rem 1rem !important;
+    text-align: center !important;
+    min-height: auto !important;
+    height: auto !important;
+  }
+
+  header {
+    padding-top: 0.5rem !important;
+    padding-bottom: 0.5rem !important;
   }
 }
 
