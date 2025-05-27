@@ -28,6 +28,20 @@ body {
   line-height: 1.6;
 }
 
+@font-face {
+  font-family: 'Rustico';
+  src: url('./fonts/Rustico-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Regular */
+@font-face {
+  font-family: 'Avenir LT Std';
+  src: url('./fonts/AvenirLTStd-Book.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
 
 header {
   display: flex;
@@ -101,6 +115,7 @@ nav a:hover {
   font-weight: 800;
   max-width: 600px;
   color: var(--primary);
+  font-family: 'Avenir LT Std', sans-serif;
 }
 
 .hero .explore {
@@ -181,6 +196,7 @@ nav a:hover {
   color: #a3e635;
   transform: scale(1.1);
 }
+
 /* Wrapper circle for LeetCode to give background */
 .leetcode-circle {
   background-color: var(--primary);
@@ -204,7 +220,7 @@ nav a:hover {
 .leetcode-circle:hover {
   transform: scale(1.03);
   /* box-shadow: 0 0 8px var(--primary); */
- 
+
 }
 
 
@@ -347,6 +363,7 @@ section h3 {
   font-size: 2.5rem;
   color: var(--primary);
   margin-bottom: 2.5rem;
+  font-family: 'Avenir LT Std', sans-serif;
 }
 
 .about-columns {
@@ -395,6 +412,7 @@ section h3 {
   margin-bottom: 2rem;
   font-size: 2rem;
   color: var(--primary, crimson);
+  font-family: 'Avenir LT Std', sans-serif;
 }
 
 .image-container {
@@ -461,6 +479,7 @@ section h3 {
   font-size: 2.5rem;
   color: var(--primary);
   margin-bottom: 3rem;
+  font-family: 'Avenir LT Std', sans-serif;
 }
 
 .timeline-wrapper {
@@ -613,6 +632,7 @@ section h3 {
   font-size: 2rem;
   font-weight: 800;
   color: var(--primary);
+  font-family: 'Avenir LT Std', sans-serif;
 }
 
 .connect-info p {
@@ -639,6 +659,8 @@ section h3 {
   transform: scale(1.05);
   box-shadow: 0 0 15px rgba(185, 255, 52, 0.8);
 }
+
+
 
 form {
   flex: 2 1 600px;
@@ -767,6 +789,7 @@ footer {
     font-size: 0.75rem;
   }
 }
+
 .timeline-date {
   position: absolute;
   top: 1rem;
@@ -784,6 +807,7 @@ footer {
   left: -140px;
   text-align: right;
 }
+
 .btn-view {
   display: inline-block;
   margin-top: 0.5rem;
@@ -796,10 +820,12 @@ footer {
   text-decoration: none;
   transition: background 0.3s ease;
 }
+
 .btn-view:hover {
   background: #a6ff00;
   box-shadow: 0 0 10px rgba(185, 255, 52, 0.5);
 }
+
 #certification-progress {
   position: absolute;
   top: 0;
@@ -813,6 +839,7 @@ footer {
   z-index: 2;
   transition: top 0.4s ease-in-out;
 }
+
 .skill-badge {
   display: inline-block;
   background-color: #a4d129;
@@ -841,6 +868,7 @@ footer {
     margin-bottom: 0.3rem;
   }
 }
+
 @media (max-width: 580px) {
 
   section,
@@ -858,6 +886,7 @@ footer {
     display: block;
     margin: 0 auto;
   }
+
   .hero,
   .about-columns,
   .connect-container {
@@ -942,6 +971,7 @@ footer {
     margin-left: auto !important;
     margin-right: 0 !important;
   }
+
   header,
   .nav {
     display: flex !important;
@@ -961,12 +991,40 @@ footer {
   }
 }
 
+h3 {
+  display: table;
+  margin: 0 auto;
+  position: relative;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+h3::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 1px;
+  width: 0;
+  background: linear-gradient(90deg, var(--primary), rgba(185, 255, 52, 0.7));
+  box-shadow: 0 0 5px rgba(185, 255, 52, 0.5);
+  border-radius: 1px;
+  transition: width 0.3s ease, opacity 0.3s ease, box-shadow 0.3s ease;
+}
+
+h3:hover::after {
+  width: 100%;
+  opacity: 1;
+  box-shadow: 0 0 8px rgba(185, 255, 52, 0.9);
+}
+
 html,
 body,
 *,
 #repo,
 .image-container,
 #services,
-.skill-badge {
+.skill-badge,
+h3 {
   cursor: url('./pictures/icons8-cursor-48.png') 16 16, default;
 }
