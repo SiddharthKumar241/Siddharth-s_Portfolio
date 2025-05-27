@@ -1026,5 +1026,5 @@ body,
 #services,
 .skill-badge,
 h3 {
-  cursor: url('./pictures/icons8-cursor-48.png') 16 16, default;
+  cursor: url('./pictures/icons8-cursor-48.png') 16 16, default !important;
 }
