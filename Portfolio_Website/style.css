@@ -42,6 +42,15 @@ body {
   font-weight: 400;
   font-style: normal;
 }
+@font-face {
+  font-family: 'Google Sans';
+  src: url('./fonts/Google_Sans/ProductSans-Bold.woff') format('woff2'),
+       url('path/to/fonts/GoogleSans-Regular.woff') format('woff'),
+       url('path/to/fonts/GoogleSans-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 
 header {
   display: flex;
@@ -508,7 +517,8 @@ section h3 {
   height: 16px;
   background: var(--primary);
   border-radius: 50%;
-  box-shadow: 0 0 10px var(--primary);
+  border:2px solid white;
+  box-shadow: 0 0 10px 02px var(--primary);
   transition: top 0.3s ease-out;
   z-index: 2;
 }
@@ -827,17 +837,18 @@ footer {
 }
 
 #certification-progress {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 16px;
-  height: 16px;
-  background: var(--primary);
-  border-radius: 50%;
-  box-shadow: 0 0 10px var(--primary);
-  z-index: 2;
-  transition: top 0.4s ease-in-out;
+position: absolute;
+top: 0;
+left: 50%;
+transform: translate(-50%, -50%);
+width: 16px;
+height: 16px;
+background: var(--primary);
+border-radius: 50%;
+border: 2px solid white; 
+box-shadow: 0 0 20px 2px var(--primary); 
+transition: top 0.3s ease-out;
+z-index: 2;
 }
 
 .skill-badge {
@@ -1025,6 +1036,6 @@ body,
 .image-container,
 #services,
 .skill-badge,
-h3 {
-  cursor: url('./pictures/icons8-cursor-48.png') 16 16, default !important;
+h3,.connect-btn  {
+  cursor:url('./pictures/icons8-cursor-48.png') 16 16, default !important;
 }
